@@ -37,14 +37,15 @@ This variable can be bound to the following:
   "Bind the debugger function key layout used by many debuggers.
 
 \\{realgud-example-map-standard}"
-  (define-key map [f5]    'realgud-continue)
-  (define-key map [S-f5]  'realgud-cmd-quit)
+  (define-key map [f9]    'realgud-continue)
+  ;;(define-key map [S-f5]  'realgud-cmd-quit)
   ;; (define-key map [f9]    'realgud-toggle-source-breakpoint)
-  (define-key map [f9]    'realgud-cmd-break)
+  (define-key map [C-f9]    'realgud-cmd-break)
   ;; (define-key map [C-f9]  'realgud-toggle-source-breakpoint-enabled)
-  (define-key map [f10]   'realgud-cmd-next)
-  (define-key map [f11]   'realgud-cmd-step)
-  (define-key map [S-f11] 'realgud-cmd-finish)
+  (define-key map [f7]   'realgud-cmd-next)
+  (define-key map [f8]   'realgud-cmd-step)
+  ;;(define-key map [S-f11] 'realgud-cmd-finish)
+
   (define-key map [M-down]    'realgud-track-hist-newer)
   (define-key map [M-kp-2]    'realgud-track-hist-newer)
   (define-key map [M-up]      'realgud-track-hist-older)

@@ -128,13 +128,13 @@ menu. (The common map typically contains function key bindings.)"
 
     (define-key menu-map [menu-bar debugger line1] '(menu-item "--"))
 
-    (define-key menu-map [up]
+    (define-key menu-map [up-key]
       (realgud-menu-item menu-map "up" 'realgud-cmd-newer-frame
 		      :enable '(realgud-get-process)
 		      :help (documentation 'realgud-cmd-newer-frame)
 		      ))
 
-    (define-key menu-map [down]
+    (define-key menu-map [down-key]
       (realgud-menu-item menu-map "down" 'realgud-cmd-older-frame
 		      :enable '(realgud-get-process)
 		      :help (documentation 'realgud-cmd-older-frame)
